@@ -1,4 +1,4 @@
-import {json} from '@shopify/remix-oxygen';
+import {json} from '@vercel/remix';
 import invariant from 'tiny-invariant';
 
 import {
@@ -56,5 +56,5 @@ export const FEATURED_ITEMS_QUERY = `#graphql
 
 /** @typedef {Class<getFeaturedData>>>} FeaturedData */
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

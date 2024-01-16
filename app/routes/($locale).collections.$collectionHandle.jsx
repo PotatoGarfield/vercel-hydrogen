@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import {json} from '@shopify/remix-oxygen';
+import {json} from '@vercel/remix';
 import {useLoaderData, useNavigate} from '@remix-run/react';
 import {useInView} from 'react-intersection-observer';
 import {
@@ -355,9 +355,9 @@ function getSortValuesFromParam(sortParam) {
   }
 }
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').Filter} Filter */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').ProductCollectionSortKeys} ProductCollectionSortKeys */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').ProductFilter} ProductFilter */
 /** @typedef {import('~/components/SortFilter').SortParam} SortParam */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

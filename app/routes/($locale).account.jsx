@@ -7,7 +7,7 @@ import {
   useOutlet,
 } from '@remix-run/react';
 import {Suspense} from 'react';
-import {json, defer, redirect} from '@shopify/remix-oxygen';
+import {json, defer, redirect} from '@vercel/remix';
 import {flattenConnection} from '@shopify/hydrogen';
 import {
   Button,
@@ -286,9 +286,9 @@ export async function getCustomer(context, customerAccessToken) {
  * @property {string} heading
  */
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').AppLoadContext} AppLoadContext */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').AppLoadContext} AppLoadContext */
 /** @typedef {import('storefrontapi.generated').CustomerDetailsFragment} CustomerDetailsFragment */
 /** @typedef {import('storefrontapi.generated').OrderCardFragment} OrderCardFragment */
 /** @typedef {import('./($locale).featured-products').FeaturedData} FeaturedData */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

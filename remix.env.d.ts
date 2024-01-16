@@ -1,5 +1,5 @@
 /// <reference types="@remix-run/dev" />
-/// <reference types="@shopify/remix-oxygen" />
+/// <reference types="@vercel/remix" />
 /// <reference types="@shopify/oxygen-workers-types" />
 
 import type {WithCache, HydrogenCart} from '@shopify/hydrogen';
@@ -24,7 +24,7 @@ declare global {
   }
 }
 
-declare module '@shopify/remix-oxygen' {
+declare module '@vercel/remix' {
   /**
    * Declare local additions to the Remix loader context.
    */

@@ -1,4 +1,4 @@
-import {json} from '@shopify/remix-oxygen';
+import {json} from '@vercel/remix';
 import {useLoaderData} from '@remix-run/react';
 import {Image} from '@shopify/hydrogen';
 import invariant from 'tiny-invariant';
@@ -114,6 +114,6 @@ const ARTICLE_QUERY = `#graphql
   }
 `;
 
-/** @typedef {import('@shopify/remix-oxygen').LinksFunction} LinksFunction */
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').LinksFunction} LinksFunction */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

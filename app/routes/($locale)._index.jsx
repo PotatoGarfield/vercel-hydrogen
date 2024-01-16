@@ -1,4 +1,4 @@
-import {defer} from '@shopify/remix-oxygen';
+import {defer} from '@vercel/remix';
 import {Suspense} from 'react';
 import {Await, useLoaderData} from '@remix-run/react';
 import {AnalyticsPageType} from '@shopify/hydrogen';
@@ -244,5 +244,5 @@ export const FEATURED_COLLECTIONS_QUERY = `#graphql
   }
 `;
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

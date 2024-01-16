@@ -184,6 +184,6 @@ const SITEMAP_QUERY = `#graphql
  * @property {string} [image.caption]
  */
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('storefrontapi.generated').SitemapsQuery} SitemapsQuery */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

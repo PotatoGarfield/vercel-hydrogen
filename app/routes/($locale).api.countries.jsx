@@ -1,4 +1,4 @@
-import {json} from '@shopify/remix-oxygen';
+import {json} from '@vercel/remix';
 
 import {CACHE_LONG} from '~/data/cache';
 import {countries} from '~/data/countries';
@@ -22,4 +22,4 @@ export default function CountriesApiRoute() {
   return null;
 }
 
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

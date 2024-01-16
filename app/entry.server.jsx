@@ -43,4 +43,4 @@ export default async function handleRequest(
   });
 }
 
-/** @typedef {import('@shopify/remix-oxygen').EntryContext} EntryContext */
+/** @typedef {import('@vercel/remix').EntryContext} EntryContext */

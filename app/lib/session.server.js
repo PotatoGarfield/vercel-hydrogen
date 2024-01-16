@@ -1,4 +1,4 @@
-import {createCookieSessionStorage} from '@shopify/remix-oxygen';
+import {createCookieSessionStorage} from '@vercel/remix';
 
 /**
  * This is a custom session implementation for your Hydrogen shop.
@@ -68,5 +68,5 @@ export class HydrogenSession {
   }
 }
 
-/** @typedef {import('@shopify/remix-oxygen').SessionStorage} SessionStorage */
-/** @typedef {import('@shopify/remix-oxygen').Session} Session */
+/** @typedef {import('@vercel/remix').SessionStorage} SessionStorage */
+/** @typedef {import('@vercel/remix').Session} Session */

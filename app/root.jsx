@@ -1,4 +1,4 @@
-import {defer} from '@shopify/remix-oxygen';
+import {defer} from '@vercel/remix';
 import {
   isRouteErrorResponse,
   Links,
@@ -283,8 +283,8 @@ async function getLayoutData({storefront, env}) {
   return {shop: data.shop, headerMenu, footerMenu};
 }
 
-/** @typedef {import('@shopify/remix-oxygen').LinksFunction} LinksFunction */
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').AppLoadContext} AppLoadContext */
+/** @typedef {import('@vercel/remix').LinksFunction} LinksFunction */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').AppLoadContext} AppLoadContext */
 /** @typedef {import('@remix-run/react').ShouldRevalidateFunction} ShouldRevalidateFunction */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

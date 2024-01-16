@@ -1,6 +1,6 @@
 import {Await} from '@remix-run/react';
 import invariant from 'tiny-invariant';
-import {json} from '@shopify/remix-oxygen';
+import {json} from '@vercel/remix';
 import {CartForm} from '@shopify/hydrogen';
 
 import {isLocalPath} from '~/lib/utils';
@@ -100,8 +100,8 @@ export default function CartRoute() {
   );
 }
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').ActionFunctionArgs} ActionFunctionArgs */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').ActionFunctionArgs} ActionFunctionArgs */
 /** @typedef {import('@shopify/hydrogen').CartQueryData} CartQueryData */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof action>} ActionReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof action>} ActionReturnData */

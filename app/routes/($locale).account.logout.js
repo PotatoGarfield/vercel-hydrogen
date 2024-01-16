@@ -1,4 +1,4 @@
-import {redirect} from '@shopify/remix-oxygen';
+import {redirect} from '@vercel/remix';
 
 /**
  * @param {AppLoadContext} context
@@ -29,8 +29,8 @@ export const action = async ({context}) => {
   return doLogout(context);
 };
 
-/** @typedef {import('@shopify/remix-oxygen').ActionFunction} ActionFunction */
-/** @typedef {import('@shopify/remix-oxygen').AppLoadContext} AppLoadContext */
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').ActionFunctionArgs} ActionFunctionArgs */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').ActionFunction} ActionFunction */
+/** @typedef {import('@vercel/remix').AppLoadContext} AppLoadContext */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').ActionFunctionArgs} ActionFunctionArgs */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

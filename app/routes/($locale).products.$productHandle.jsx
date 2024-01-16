@@ -1,6 +1,6 @@
 import {useRef, Suspense} from 'react';
 import {Disclosure, Listbox} from '@headlessui/react';
-import {defer, redirect} from '@shopify/remix-oxygen';
+import {defer, redirect} from '@vercel/remix';
 import {useLoaderData, Await} from '@remix-run/react';
 import {
   AnalyticsPageType,
@@ -589,9 +589,9 @@ async function getRecommendedProducts(storefront, productId) {
   return {nodes: mergedProducts};
 }
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('@shopify/hydrogen').ShopifyAnalyticsProduct} ShopifyAnalyticsProduct */
 /** @typedef {import('storefrontapi.generated').ProductQuery} ProductQuery */
 /** @typedef {import('storefrontapi.generated').ProductVariantFragmentFragment} ProductVariantFragmentFragment */
 /** @typedef {import('~/lib/type').Storefront} Storefront */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

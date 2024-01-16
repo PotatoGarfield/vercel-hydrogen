@@ -1,4 +1,4 @@
-import {json, redirect} from '@shopify/remix-oxygen';
+import {json, redirect} from '@vercel/remix';
 import {
   Form,
   useActionData,
@@ -406,6 +406,6 @@ const CREATE_ADDRESS_MUTATION = `#graphql
  * @property {string} [formError]
  */
 
-/** @typedef {import('@shopify/remix-oxygen').ActionFunction} ActionFunction */
+/** @typedef {import('@vercel/remix').ActionFunction} ActionFunction */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').MailingAddressInput} MailingAddressInput */
 /** @typedef {import('./($locale).account.edit').AccountOutletContext} AccountOutletContext */

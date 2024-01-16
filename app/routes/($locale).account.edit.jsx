@@ -1,4 +1,4 @@
-import {json, redirect} from '@shopify/remix-oxygen';
+import {json, redirect} from '@vercel/remix';
 import {
   useActionData,
   Form,
@@ -296,6 +296,6 @@ const CUSTOMER_UPDATE_MUTATION = `#graphql
  * @property {string} [fieldErrors.newPassword2]
  */
 
-/** @typedef {import('@shopify/remix-oxygen').ActionFunction} ActionFunction */
+/** @typedef {import('@vercel/remix').ActionFunction} ActionFunction */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').Customer} Customer */
 /** @typedef {import('@shopify/hydrogen/storefront-api-types').CustomerUpdateInput} CustomerUpdateInput */

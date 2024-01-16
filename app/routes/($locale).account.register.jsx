@@ -1,4 +1,4 @@
-import {redirect, json} from '@shopify/remix-oxygen';
+import {redirect, json} from '@vercel/remix';
 import {Form, useActionData} from '@remix-run/react';
 import {useState} from 'react';
 
@@ -217,7 +217,7 @@ const CUSTOMER_CREATE_MUTATION = `#graphql
  * }} ActionData
  */
 
-/** @typedef {import('@shopify/remix-oxygen').ActionFunction} ActionFunction */
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').ActionFunction} ActionFunction */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @template T @typedef {import('@remix-run/react').MetaFunction<T>} MetaFunction */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */

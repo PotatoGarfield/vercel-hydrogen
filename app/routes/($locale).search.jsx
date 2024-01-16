@@ -1,4 +1,4 @@
-import {defer} from '@shopify/remix-oxygen';
+import {defer} from '@vercel/remix';
 import {Await, Form, useLoaderData} from '@remix-run/react';
 import {Suspense} from 'react';
 import {Pagination, getPaginationVariables} from '@shopify/hydrogen';
@@ -215,6 +215,6 @@ const SEARCH_QUERY = `#graphql
   ${PRODUCT_CARD_FRAGMENT}
 `;
 
-/** @typedef {import('@shopify/remix-oxygen').LoaderFunctionArgs} LoaderFunctionArgs */
+/** @typedef {import('@vercel/remix').LoaderFunctionArgs} LoaderFunctionArgs */
 /** @typedef {import('./($locale).featured-products').FeaturedData} FeaturedData */
-/** @typedef {import('@shopify/remix-oxygen').SerializeFrom<typeof loader>} LoaderReturnData */
+/** @typedef {import('@vercel/remix').SerializeFrom<typeof loader>} LoaderReturnData */
